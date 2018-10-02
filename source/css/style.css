@@ -1,0 +1,24 @@
+*{
+    font-family: Arial;
+}
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.productName {
+    height: 323px;
+    background-color: #445161;
+}
+
+.productName article {
+    width: 1180px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.productName h1 {
+    font-size: 59px;
+    color: #fff;
+    text-shadow: .5px .9px 0 rgba(0, 0, 0, .3);
+}
