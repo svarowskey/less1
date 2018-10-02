@@ -15,10 +15,33 @@
     width: 1180px;
     margin-left: 50px;
     margin-right: 50px;
+    padding-top: 50px;
 }
 
 .productName h1 {
+    float: left;
     font-size: 59px;
     color: #fff;
     text-shadow: .5px .9px 0 rgba(0, 0, 0, .3);
+    margin: 0;
+}
+
+.productName ul {
+    float: left;
+}
+
+.productName li {
+    font-size: 20px;
+    color: #fff;
+    list-style-image: url("../img/check-icon.png");
+    text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
+    line-height: 1.8;
+}
+
+.productImg {
+    float: right;
+    width: 469px;
+    height: 214px;
+    background: #fff;
+    margin-top: 10px;
 }
