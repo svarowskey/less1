@@ -127,7 +127,7 @@ body {
     color: #333;
     margin-left: 15px;
     float: left;
-    width: 34rem;
+    width: 340px;
     text-align: justify;
 }
 .reviews {
@@ -399,6 +399,7 @@ body {
     .productList {
         float: none;
         display: inline-block;
+        text-align: left;
     }
     .productList li {
         font-size: 20px;
