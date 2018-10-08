@@ -14,9 +14,11 @@ body {
 .clr {
     clear: both;
 }
-.container {
-    width: 1280px;
-    margin: 0 auto;
+
+@media (min-width: 1200px){
+    .container {
+        width: 1280px;
+    }
 }
 .productHeader {
     background-color: #445161;
@@ -43,7 +45,6 @@ body {
     float: right;
     width: 469px;
     height: 214px;
-    background: #fff;
 }
 .aboutProduct {
     background-color: #fff;
@@ -60,7 +61,6 @@ body {
     width: 430px;
     height: 245px;
     float: right;
-    background-color: #445161;
 }
 .aboutProductText {
     float: left;
@@ -81,8 +81,6 @@ body {
 }
 .plusesList {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden;
 }
 .plusesList li {
     width: 545px;
@@ -92,6 +90,10 @@ body {
     background: url("../img/plus.png") no-repeat left 5px;
     padding-left: 45px;
     line-height: 1.5;
+    text-align: justify;
+}
+.plusesList li:nth-child(2n+2) {
+    margin-left: 20px;
 }
 .screenshots {
     background-color: #fff;
@@ -105,18 +107,12 @@ body {
     color: var(--title-color);
 }
 .screenshots article {
-    display: inline-block;
-    width: 587px;
     margin: 20px 0 20px 0;
-}
-.screenshots article:nth-child(n+4) {
-    margin-bottom: 0;
 }
 .screenshotsItemImg {
     float: left;
     width: 200px;
     height: 150px;
-    background-color: #445161;
 }
 .screenshotsItemTitle {
     float: left;
@@ -131,7 +127,8 @@ body {
     color: #333;
     margin-left: 15px;
     float: left;
-    width: 360px;
+    width: 34rem;
+    text-align: justify;
 }
 .reviews {
     padding: 50px;
@@ -144,8 +141,7 @@ body {
     margin-bottom: 33px;
 }
 .reviewsItem {
-    float: left;
-    margin: 0 0 24px 0;
+    margin-bottom: 30px;
 }
 .reviewsItemImg {
     float: left;
@@ -154,23 +150,34 @@ body {
     border-radius: 75px;
     background-color: #445161;
 }
+.reviewsItemText:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 95px;
+    top: 27px;
+    background: #ebebeb;
+    transform: rotate(45deg);
+}
 .reviewsItemText {
     float: left;
-    width: 483px;
+    width: 468px;
     height: 121px;
-    background: url("../img/bg_review.png");
     margin-left: 16px;
     font-size: 14px;
     line-height: 1.29;
+    background: #ebebeb;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 .reviewsItemText p {
-    width: 436px;
-    margin: 14px 0 8px 27px;
     font-style: italic;
     color: #333;
 }
 .reviewsItemText figcaption {
-    margin-left: 27px;
+    margin-top: 5px;
     color: #989898;
 }
 .buyItNow {
@@ -183,6 +190,7 @@ body {
     margin: 0 auto;
     justify-content: space-between;
     align-items: flex-end;
+    float: unset;
 }
 .buyItNowTitle {
     text-align: center;
@@ -206,7 +214,7 @@ body {
 }
 .buyItNowItemPrice {
     text-align: center;
-    width: 296px;
+    width: 100%;
     height: 71px;
     font-size: 40px;
     line-height: 71px;
@@ -234,7 +242,6 @@ body {
     margin: 0 auto 17px auto;
 }
 .contacts {
-    width: 1280px;
     background: #445162;
     padding-bottom: 50px;
 }
@@ -284,7 +291,7 @@ body {
     font-weight: bold;
 }
 .contactsBlock {
-    width: 280px;
+    width: 300px;
     margin-left: 20px;
 }
 .contactsList {
@@ -324,5 +331,64 @@ body {
     color: #445162;
     font-size: 12px;
     line-height: 30px;
-    letter-spacing: 0.3px;
+    letter-spacing: .3px;
+}
+
+@media(max-width: 1199px) {
+    .plusesList li {
+        width: 410px;
+        margin-bottom: 10px;
+    }
+    .plusesList li:nth-child(2n+2) {
+        margin-left: 20px;
+    }
+    .screenshotsItemText {
+        width: 62rem;
+    }
+    .screenshots article {
+        margin-bottom: 50px;
+    }
+    .screenshots article:last-child {
+        margin-bottom: 0;
+    }
+    .reviewsItemText {
+        width: 314px;
+        height: 184px;
+    }
+    .reviewsItem:nth-child(n+4) {
+        margin-bottom: 0;
+    }
+}
+@media(max-width: 991px) {
+    .contactsBlock {
+        margin: 0;
+    }
+    .contactsForm input:not([type='submit']),
+    .contactsForm textarea
+    {
+        width: 100%;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+}
+@media(max-width: 670px) {
+    .contactsContent {
+        display: block;
+    }
+    .contactsForm,
+    .contactsBlock {
+        width: 100%;
+    }
+    .contactsForm {
+        margin-bottom: 80px;
+    }
+    .contactsList {
+        width: fit-content;
+        margin: 0 auto 50px;
+        padding: 0;
+    }
+    .contactsSocial {
+        margin: 0 auto;
+    }
 }
