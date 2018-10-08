@@ -171,6 +171,7 @@ body {
     padding: 16px;
     box-sizing: border-box;
     border-radius: 4px;
+    text-align: justify;
 }
 .reviewsItemText p {
     font-style: italic;
