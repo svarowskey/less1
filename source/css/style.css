@@ -535,3 +535,28 @@ body {
         margin: 0 auto;
     }
 }
+
+@media (max-width: 610px) {
+    .productImg {
+        width: 100%;
+        height: auto;
+    }
+    .plusesProduct .plusesList li{
+        margin-bottom: 70px;
+        height: fit-content;
+    }
+    .aboutProductImg {
+        width: 100%;
+        height: auto;
+    }
+    .buyItNowItems {
+        width: 100%;
+    }
+    .buyItNowItem {
+        width: 100%
+    }
+    .buyItNowItemList {
+        max-width: 300px;
+        width: auto;
+    }
+}
