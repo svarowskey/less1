@@ -537,17 +537,33 @@ body {
 }
 
 @media (max-width: 610px) {
+    .productHeader {
+        padding: 24px;
+    }
     .productImg {
         width: 100%;
         height: auto;
     }
+    .plusesProduct {
+        padding: 24px;
+    }
     .plusesProduct .plusesList li{
-        margin-bottom: 70px;
+        margin-top: 30px;
+        margin-bottom: 10px;
         height: fit-content;
+    }
+    .screenshots {
+        padding: 24px;
+    }
+    .aboutProduct {
+        padding: 24px;
     }
     .aboutProductImg {
         width: 100%;
         height: auto;
+    }
+    .reviews {
+        padding: 24px;
     }
     .buyItNowItems {
         width: 100%;
