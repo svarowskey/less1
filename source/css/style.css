@@ -335,6 +335,13 @@ body {
 }
 
 @media(max-width: 1199px) {
+    .productList li {
+        font-size: 15px;
+        line-height: 2;
+    }
+    .aboutProductText {
+        width: 420px;
+    }
     .plusesList li {
         width: 410px;
         margin-bottom: 10px;
@@ -358,8 +365,15 @@ body {
     .reviewsItem:nth-child(n+4) {
         margin-bottom: 0;
     }
+    .buyItNowItems {
+        width: 100%;
+    }
 }
 @media(max-width: 991px) {
+    h2,
+    h1{
+        margin-top: 0;
+    }
     .contactsBlock {
         margin: 0;
     }
@@ -371,8 +385,136 @@ body {
     .col-sm-6 {
         width: 50%;
     }
+    .productHeader {
+        text-align: center;
+    }
+    .productName {
+        float: none;
+        margin-bottom: 30px;
+    }
+    .productImg {
+        float: none;
+        margin-bottom: 30px;
+    }
+    .productList {
+        float: none;
+        display: inline-block;
+    }
+    .productList li {
+        font-size: 20px;
+        line-height: 1.8;
+    }
+    .aboutProduct {
+        text-align: center;
+    }
+    .aboutTitle {
+        float: none;
+        margin-bottom: 30px;
+    }
+    .aboutProductImg {
+        float: none;
+        margin-bottom: 30px;
+    }
+    .aboutProductText {
+        text-align: justify;
+        width: fit-content;
+    }
+    .plusesList {
+        margin-bottom: 0;
+    }
+    .plusesProduct .plusesList li {
+        margin-left: 0;
+        width: 100%;
+    }
+    .plusesProduct .plusesList li:last-child {
+        margin-bottom: 0;
+    }
+    .screenshotsItemText {
+        width: 40rem;
+    }
+    .reviews .reviewsItem {
+        margin-bottom: 30px;
+    }
+    .reviews .reviewsItem:nth-child(5) {
+        margin-bottom: 0;
+    }
+    .reviewsItemText {
+        width: 529px;
+        height: 130px;
+    }
+    .buyItNowItems {
+        width: min-content;
+        display: block;
+        overflow: hidden;
+    }
+    .buyItNowItem {
+        width: 400px;
+        margin-bottom: 60px;
+    }
+    .buyItNowItem:last-child {
+        margin-bottom: 0;
+    }
+    .buyItNowItemList {
+        width: 300px;
+        margin: 20px auto 20px;
+    }
+}
+@media(max-width: 766px) {
+    .screenshotsItemText {
+        width: 35rem;
+    }
+    .reviewsItemText {
+        width: 470px;
+    }
+}
+@media(max-width: 711px) {
+    .screenshotsItemText {
+        width: 33rem;
+    }
+    .reviewsItemText {
+        width: 432px;
+        height: 148px;
+    }
+}
+@media(max-width: 700px) {
+    .screenshotsItemText {
+        width: 30rem;
+    }
 }
 @media(max-width: 670px) {
+    .screenshotsItem {
+        text-align: center;
+        overflow: hidden;
+    }
+    .screenshotsItemTitle {
+        float: none;
+        margin: 20px 0 20px 0;
+    }
+    .screenshotsItemImg {
+        float: none;
+        width: auto;
+        height: 200px;
+    }
+    .screenshotsItemText {
+        float: none;
+        margin: 0 auto;
+        width: fit-content;
+        height: fit-content;
+    }
+    .reviewsItem {
+        text-align: center;
+    }
+    .reviewsItemImg {
+        float: none;
+    }
+    .reviewsItemText:not(:nth-child(5)) {
+        margin: 15px auto 20px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .reviewsItemText:before {
+        display: none;
+    }
     .contactsContent {
         display: block;
     }
