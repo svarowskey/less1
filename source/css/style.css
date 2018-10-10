@@ -270,6 +270,7 @@ body {
     line-height: 1.5;
     color: #ffffff;
     font-size: 16px;
+    padding-left: 0;
 }
 .contactsList li {
     margin-bottom: 26px;
